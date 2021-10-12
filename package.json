@@ -1,0 +1,22 @@
+{
+  "name": "iced",
+  "version": "1.0.0",
+  "description": "",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/malin-nilsson/iced.git"
+  },
+  "author": "Malin Nilsson",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/malin-nilsson/iced/issues"
+  },
+  "homepage": "https://github.com/malin-nilsson/iced#readme",
+  "dependencies": {
+    "gulp": "^4.0.2"
+  }
+}
