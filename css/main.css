@@ -2,87 +2,116 @@
   box-sizing: border-box;
 }
 
-html {
-  font-size: 12pt;
-}
-
 body {
   font-family: "Montserrat", sans-serif;
+  font-size: 12pt;
   height: 100%;
   padding: 0;
   margin: 0;
 }
 
-/* hero */
 .hero-container {
   background-image: url("../images/hero.jpg");
-  background-position: left center;
+  background-position: top center;
   background-repeat: no-repeat;
   background-size: cover;
-  padding-bottom: 250px;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end;
+  height: 500px;
 }
 
 .hero-text {
-  position: relative;
-  top: 120px;
-  right: 22px;
-  color: #fff;
-  font-size: 1.5rem;
-  font-weight: 500;
+  position: absolute;
+  top: 250px;
+  left: 0;
+  right: 0;
+  text-align: center;
+  color: #ffefd6;
+  text-shadow: 6px 6px black;
+  font-size: 3.2rem;
+  font-weight: 900;
 }
 
 h2 {
   font-size: 2rem;
-  padding: 10px 10px;
+  padding: 0px 10px 20px;
   font-weight: 900;
 }
 
-/* NAVIGATION */
-nav {
+.navbar {
   display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  color: white;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+.brand-title {
+  font-size: 1.5rem;
+  font-weight: 900;
+  margin: 0.5rem;
+  text-transform: uppercase;
+  color: black;
+}
+
+.navbar-links {
+  flex-direction: column;
+  display: none;
   width: 100%;
 }
 
-.navbar-light .navbar-toggler {
-  border: none;
+.navbar-links ul {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  flex-direction: column;
 }
 
-.navbar-nav {
-  align-items: center;
-}
-
-.bg-light {
-  --bs-bg-opacity: 0.4;
-}
-
-.navbar-light .navbar-nav .nav-link {
-  color: black;
+.navbar-links li {
+  list-style: none;
+  text-align: center;
+  padding: 8px;
   font-weight: 600;
 }
 
-/* HEADER */
-.iced-bold {
-  text-transform: uppercase;
-  font-size: 1.6rem;
-  font-weight: 700;
-  margin: 0;
+.navbar-links ul li a {
+  text-decoration: none;
+  color: black;
+}
+
+.navbar-links li:hover {
+  background-color: #555;
+}
+
+.navbar-links.active {
+  display: flex;
+}
+
+.toggle-button {
+  position: absolute;
+  top: 0.75rem;
+  right: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 21px;
+}
+
+.toggle-button .bar {
+  height: 4px;
+  width: 100%;
+  background-color: black;
+  border-radius: 10px;
 }
 
 h2,
 h3 {
   text-align: center;
+  font-size: 1.5rem;
+  margin: 5px;
 }
 
 h3 {
   text-decoration: underline;
-}
-
-/* MAIN CONTENT */
-.main-container {
-  padding: 10px;
 }
 
 .card {
@@ -94,16 +123,16 @@ h3 {
   border: none;
   background-color: transparent;
 }
+.card a {
+  text-decoration: none;
+  color: black;
+}
 
 .cards {
-  padding-top: 20px;
+  padding: 40px 0px;
+  background-color: antiquewhite;
 }
-
-figure img:hover {
-  opacity: 0.7;
-}
-
-.card a {
+.cards a {
   color: black;
 }
 
@@ -116,11 +145,6 @@ figure img:hover {
   padding: 15px;
   margin: 10px;
 }
-
-.btn a {
-  text-decoration: none;
-}
-
 .btn:hover {
   background-color: #ECC4A2;
   transition: background-color 0.3s;
@@ -139,6 +163,15 @@ figure img:hover {
   flex-direction: column;
 }
 
+.menu-card {
+  padding-bottom: 50px;
+}
+
+.menu-card a {
+  color: black;
+  text-decoration: none;
+}
+
 figure {
   padding: 0;
   margin: 0;
@@ -149,18 +182,13 @@ figure img {
   height: auto;
 }
 
-figcaption {
-  padding: 10px;
+figure img:hover {
+  opacity: 0.7;
 }
 
 .img-container img {
   width: 100%;
   height: auto;
-}
-
-.menu-card a {
-  color: black;
-  text-decoration: none;
 }
 
 .card.menu-locations {
@@ -170,7 +198,6 @@ figcaption {
 
 .card.button-card {
   padding: 50px;
-  background-color: antiquewhite;
 }
 
 /* ABOUT */
@@ -188,6 +215,10 @@ figcaption {
   color: black;
 }
 
+.about-container .cards {
+  background-color: #ffd298;
+}
+
 /* FOOTER */
 footer {
   background-color: #29201b;
@@ -203,6 +234,10 @@ footer .card a {
   color: white;
 }
 
+.footer.cards {
+  background-color: #29201b;
+}
+
 .bold-text {
   margin-bottom: 30px;
   font-size: 2rem;
@@ -211,6 +246,7 @@ footer .card a {
 /* MEDIA QUERIES */
 @media only screen and (min-width: 768px) {
   .hero-container {
+    background-image: url("../images/hero-desktop.jpg");
     background-position: top center;
     padding-bottom: 750px;
   }
@@ -219,6 +255,32 @@ footer .card a {
     top: 370px;
     right: 150px;
     font-size: 5rem;
+  }
+
+  .navbar {
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .toggle-button {
+    display: none;
+  }
+
+  .navbar-links {
+    display: block;
+  }
+
+  .navbar-link ul {
+    flex-direction: row;
+  }
+
+  .navbar-links li a {
+    display: block;
+    padding: 1rem;
+  }
+
+  .navbar-links.active {
+    display: none;
   }
 
   figure img {
