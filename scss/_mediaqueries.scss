@@ -1,0 +1,90 @@
+/* MEDIA QUERIES */
+
+@media only screen and (min-width: 768px) {
+
+  .hero-container {
+    background-image: url('../images/hero-desktop.jpg');
+    background-position: top center;
+    padding-bottom: 750px;
+  }
+
+  .hero-text {
+    top: 370px;
+    right: 150px;
+    font-size: 5rem;
+  }
+
+  .navbar {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 20px;
+  }
+
+  .toggle-button {
+    display: none;
+  }
+
+  .navbar-links {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+  }
+
+  .navbar-links ul {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .navbar-links li a {
+    padding: 1rem;
+  }
+
+  .navbar-links.active {
+    display: none;
+  }
+
+  figure img {
+    height: 400px;
+    width: auto;
+  }
+
+  .menu-cards {
+    flex-direction: row;
+    justify-content: center;
+    padding: 0px 70px 40px;
+  }
+
+  .card.menu-locations {
+    padding: 40px 0px;
+  }
+
+ 
+
+  .card.button-card {
+    padding: 100px;
+  }
+
+  .cards h2 {
+    font-size: 3.5rem;
+  }
+
+  .brand-title {
+    font-size: 3rem;
+  }
+
+  .title {
+    font-size: 2.5rem;
+  }
+
+  .about-container {
+    padding: 30px 150px;
+  }
+
+  footer p {
+    font-size: 1.2rem;
+  }
+
+
+
+}

@@ -1,46 +1,8 @@
-* {
-  box-sizing: border-box;
-}
-
-body {
-  font-family: "Montserrat", sans-serif;
-  font-size: 12pt;
-  height: 100%;
-  padding: 0;
-  margin: 0;
-}
-
-.hero-container {
-  background-image: url("../images/hero.jpg");
-  background-position: top center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 500px;
-}
-
-.hero-text {
-  position: absolute;
-  top: 250px;
-  left: 0;
-  right: 0;
-  text-align: center;
-  color: #ffefd6;
-  text-shadow: 6px 6px black;
-  font-size: 3.2rem;
-  font-weight: 900;
-}
-
-h2 {
-  font-size: 2rem;
-  padding: 0px 10px 20px;
-  font-weight: 900;
-}
-
 .navbar {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  color: white;
+  color: black;
   background-color: rgba(255, 255, 255, 0.5);
 }
 
@@ -78,7 +40,7 @@ h2 {
 }
 
 .navbar-links li:hover {
-  background-color: #555;
+  text-decoration: underline;
 }
 
 .navbar-links.active {
@@ -103,15 +65,33 @@ h2 {
   border-radius: 10px;
 }
 
-h2,
-h3 {
-  text-align: center;
-  font-size: 1.5rem;
-  margin: 5px;
+.hero-container {
+  background-image: url("../images/hero.jpg");
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 600px;
 }
 
-h3 {
-  text-decoration: underline;
+.hero-text {
+  position: absolute;
+  top: 250px;
+  left: 0;
+  right: 0;
+  text-align: center;
+  color: #ffefd6;
+  text-shadow: 6px 6px black;
+  font-size: 3.2rem;
+  font-weight: 900;
+}
+
+main {
+  background-color: antiquewhite;
+}
+
+.title {
+  text-align: center;
+  font-size: 2rem;
 }
 
 .card {
@@ -128,8 +108,12 @@ h3 {
   color: black;
 }
 
+.card.follow {
+  padding-bottom: 60px;
+}
+
 .cards {
-  padding: 40px 0px;
+  padding: 20px 20px;
   background-color: antiquewhite;
 }
 .cards a {
@@ -164,7 +148,7 @@ h3 {
 }
 
 .menu-card {
-  padding-bottom: 50px;
+  padding-bottom: 20px;
 }
 
 .menu-card a {
@@ -173,7 +157,7 @@ h3 {
 }
 
 figure {
-  padding: 0;
+  padding: 0px 20px;
   margin: 0;
 }
 
@@ -184,6 +168,14 @@ figure img {
 
 figure img:hover {
   opacity: 0.7;
+}
+
+h3 {
+  text-align: center;
+  text-decoration: underline;
+  font-size: 1.7rem;
+  padding: 0;
+  margin-top: 8px;
 }
 
 .img-container img {
@@ -198,6 +190,12 @@ figure img:hover {
 
 .card.button-card {
   padding: 50px;
+}
+
+.cards h2 {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 300;
 }
 
 /* ABOUT */
@@ -258,8 +256,10 @@ footer .card a {
   }
 
   .navbar {
+    flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    padding: 0px 20px;
   }
 
   .toggle-button {
@@ -267,15 +267,17 @@ footer .card a {
   }
 
   .navbar-links {
-    display: block;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
   }
 
-  .navbar-link ul {
+  .navbar-links ul {
+    display: flex;
     flex-direction: row;
   }
 
   .navbar-links li a {
-    display: block;
     padding: 1rem;
   }
 
@@ -291,19 +293,27 @@ footer .card a {
   .menu-cards {
     flex-direction: row;
     justify-content: center;
-    margin-bottom: 50px;
+    padding: 0px 70px 40px;
   }
 
-  .menu-card {
-    padding: 20px 10px;
+  .card.menu-locations {
+    padding: 40px 0px;
   }
 
   .card.button-card {
     padding: 100px;
   }
 
-  h2 {
+  .cards h2 {
+    font-size: 3.5rem;
+  }
+
+  .brand-title {
     font-size: 3rem;
+  }
+
+  .title {
+    font-size: 2.5rem;
   }
 
   .about-container {
@@ -313,4 +323,15 @@ footer .card a {
   footer p {
     font-size: 1.2rem;
   }
+}
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  font-size: 12pt;
+  height: 100%;
+  padding: 0;
+  margin: 0;
 }
