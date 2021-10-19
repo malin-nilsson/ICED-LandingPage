@@ -78,6 +78,8 @@ main {
     text-decoration: none;
   }
   
+ 
+
   figure {
     padding: 0px 20px;
     margin: 0;
@@ -130,6 +132,10 @@ main {
   .about-text {
     font-size: 1.1rem;
     line-height: 25px;
+  }
+
+  .about-container .title {
+    text-align: left;
   }
   
   .about-container a {
