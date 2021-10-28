@@ -1,6 +1,7 @@
 @use 'navigation';
 @use 'hero';
 @use 'grid';
+@use 'about';
 @use 'footer';
 @use 'mediaqueries';
 
@@ -15,6 +16,7 @@ body {
   height: 100%;
   padding: 0;
   margin: 0;
+  scroll-behavior: smooth;
 }
 
 

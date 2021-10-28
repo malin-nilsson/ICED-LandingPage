@@ -1,13 +1,29 @@
 
 // MAIN CONTENT
 main {
-  background-color: antiquewhite;
+  background-color: #875c31;
+  color: white;
+
 }
+
+.grid-container {
+display: grid;
+grid-template-columns: 1fr
+}
+
+.box {
+display: flex;
+flex-direction: column;
+}
+
 
 .title {
   text-align: center;
-  font-size: 2rem;
+  font-size: 3rem;
+  padding: 10px;
+  margin: 10px;
 }
+
 .card {
     text-align: center;
     display: flex;
@@ -62,88 +78,14 @@ main {
   .snowflake {
     font-size: 2.5rem;
     margin: 5px;
-  }
-  
-  .menu-cards {
-    display: flex;
-    flex-direction: column;
-  }
-  
-  .menu-card {
-    padding-bottom: 20px;
-  }
-  
-  .menu-card a {
-    color: black;
-    text-decoration: none;
-  }
-  
- 
-
-  figure {
-    padding: 0px 20px;
-    margin: 0;
-  }
-  
-  figure img {
-    width: 100%;
-    height: auto;
-  }
-  
-  figure img:hover {
-    opacity: 0.7;
-  
-  }
-  
- h3 {
     text-align: center;
-    text-decoration: underline;
-    font-size: 1.7rem;
-    padding: 0;
-    margin-top: 8px;
   }
+  
   .img-container img {
     width: 100%;
     height: auto;
   }
-  
-  .card.menu-locations {
-    flex-direction: row;
-    padding: 0px 0px 40px;
-  }
-  
-  .card.button-card {
-    padding: 50px;
-  }
-  
-  .cards h2 {
-    text-align: center;
-    font-size: 2rem;
-    font-weight: 300;
-  }
+ 
 
-  /* ABOUT */
-  
-  .about-container {
-    background-color: #ffd298;
-    padding: 10px 30px;
-  }
-  
-  .about-text {
-    font-size: 1.1rem;
-    line-height: 25px;
-  }
 
-  .about-container .title {
-    text-align: left;
-  }
-  
-  .about-container a {
-    color: black;
-  }
-  
-  .about-container .cards {
-    background-color: #ffd298;
-  }
-  
   

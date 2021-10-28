@@ -88,12 +88,25 @@
 }
 
 main {
-  background-color: antiquewhite;
+  background-color: #875c31;
+  color: white;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.box {
+  display: flex;
+  flex-direction: column;
 }
 
 .title {
   text-align: center;
-  font-size: 2rem;
+  font-size: 3rem;
+  padding: 10px;
+  margin: 10px;
 }
 
 .card {
@@ -142,42 +155,7 @@ main {
 .snowflake {
   font-size: 2.5rem;
   margin: 5px;
-}
-
-.menu-cards {
-  display: flex;
-  flex-direction: column;
-}
-
-.menu-card {
-  padding-bottom: 20px;
-}
-
-.menu-card a {
-  color: black;
-  text-decoration: none;
-}
-
-figure {
-  padding: 0px 20px;
-  margin: 0;
-}
-
-figure img {
-  width: 100%;
-  height: auto;
-}
-
-figure img:hover {
-  opacity: 0.7;
-}
-
-h3 {
   text-align: center;
-  text-decoration: underline;
-  font-size: 1.7rem;
-  padding: 0;
-  margin-top: 8px;
 }
 
 .img-container img {
@@ -185,24 +163,10 @@ h3 {
   height: auto;
 }
 
-.card.menu-locations {
-  flex-direction: row;
-  padding: 0px 0px 40px;
-}
-
-.card.button-card {
-  padding: 50px;
-}
-
-.cards h2 {
-  text-align: center;
-  font-size: 2rem;
-  font-weight: 300;
-}
-
 /* ABOUT */
-.about-container {
+.about {
   background-color: #ffd298;
+  color: black;
   padding: 10px 30px;
 }
 
@@ -211,16 +175,13 @@ h3 {
   line-height: 25px;
 }
 
-.about-container .title {
+.title-sm {
   text-align: left;
+  font-size: 2rem;
 }
 
-.about-container a {
+.about a {
   color: black;
-}
-
-.about-container .cards {
-  background-color: #ffd298;
 }
 
 /* FOOTER */
@@ -253,12 +214,13 @@ footer .card a {
   .hero-container {
     background-image: url("../images/hero-desktop.jpg");
     background-position: top center;
-    padding-bottom: 900px;
+    padding-bottom: 700px;
+    background-size: cover;
   }
 
   .hero-text {
     text-align: right;
-    padding-top: 150px;
+    padding-top: 120px;
     padding-right: 100px;
     font-size: 5rem;
   }
@@ -295,6 +257,13 @@ footer .card a {
 
   .navbar-links.active {
     display: none;
+  }
+
+  .grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 20px;
   }
 
   figure img {
@@ -355,6 +324,10 @@ footer .card a {
     margin: 10px;
     font-size: 1.1rem;
   }
+
+  .menu-container {
+    padding: 100px;
+  }
 }
 * {
   box-sizing: border-box;
@@ -366,4 +339,5 @@ body {
   height: 100%;
   padding: 0;
   margin: 0;
+  scroll-behavior: smooth;
 }
