@@ -32,9 +32,11 @@
                 </a>
                 <div class="navbar-links">
                     <ul>
-                        <li><a href="#">Menu</a></li>
-                        <li><a href="#">Locations</a></li>
-                        <li><a href="#">Contact</a></li>
+                        <li><a href="#menu">Menu</a></li>
+                        <li><a href="#locations">Locations</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#community">Community</a></li>
+                        <li><a href="#contact">Contact</a></li>
                     </ul>
                 </div>
             </nav>
@@ -44,26 +46,31 @@
 
     <!-- MAIN CONTENT -->
     <main>
-
+<div class="header">
+    <p class="title">Get your iced coffee fix
+        <span class="snowflake"> &#10052;&#65039; </span>
+    </p>
+</div>
         <div class="grid-container">
-            <section class="menu">
-                <p class="title">Get your iced coffee fix
-                <span class="snowflake"> &#10052;&#65039; </span>
-            </p>
-                
-            </section>
-            <section class="menu">
+            <section class="menu" id="menu">
                 <div class="img-container">
                     <a href="#">
                         <img src="./images/menu.jpg" alt="Ice chunks being poured into coffee">
                     </a>
                 </div>
             </section>
+            <section class="menu" id="locations">
+                <div class="img-container">
+                    <a href="#">
+                        <img src="./images/locations.jpg" alt="Ice chunks being poured into coffee">
+                    </a>
+                </div>
+            </section>
         </div>
 
         <div class="grid-container">
-            <section class="community">
-                <p class="title">
+            <section class="community" id="community">
+                <p class="title-md">
                     Iced coffee addict? Join the club.
                 </p>
                 <div class="box">
@@ -78,8 +85,8 @@
                 </div>
         </div>
 
-        <div class="grid-container">
-            <section class="about">
+        <div class="about-container">
+            <section class="about" id="about">
                 <p class="title-sm">Iced coffee isn't just a drink. It's a lifestyle. &#128525;
                 </p>
                 <p class="about-text">
@@ -90,15 +97,16 @@
                     reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
                     pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
                     culpa qui officia deserunt mollit anim id est laborum.
+                    <a href="#">Read more</a>
                 </p>
-                <a href="#">Read more</a>
+              
             </section>
         </div>
 
 
         <!-- FOOTER -->
         <footer>
-            <div class="cards footer">
+            <div class="cards footer" id="contact">
                 <div class="card">
                     <p>Say Hi! 👋
                     </p>

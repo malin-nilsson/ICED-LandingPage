@@ -1,91 +1,110 @@
-
 // MAIN CONTENT
-main {
-  background-color: #875c31;
-  color: white;
-
-}
 
 .grid-container {
-display: grid;
-grid-template-columns: 1fr
+  display: grid;
+  grid-template-columns: 1fr
 }
 
 .box {
-display: flex;
-flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
+.community {
+  padding: 20px 0px 0px;
+}
 
 .title {
   text-align: center;
   font-size: 3rem;
-  padding: 10px;
-  margin: 10px;
+  margin: 0;
+  padding: 0;
+}
+
+.title-md {
+  font-size: 2rem;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+}
+
+.title-sm {
+  font-size: 2.8rem;
+  padding-top: 20px;
+  margin: 0;
 }
 
 .card {
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    border: none;
-    background-color: transparent;
-  
-    a {
-      text-decoration: none;
-      color: black;
-    }
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  background-color: transparent;
+
+  a {
+    text-decoration: none;
+    color: black;
   }
-  
-  .card.follow {
-    padding-bottom: 60px;
+}
+
+.card.follow {
+  padding-bottom: 60px;
+}
+
+.cards {
+  padding: 20px 20px;
+  background-color: antiquewhite;
+
+  a {
+    color: black;
   }
-  .cards {
-    padding: 20px 20px;
-    background-color: antiquewhite;
-  
-   a {
-      color: black;
-    }
-  }
+}
 
 
-  
-  .btn {
-    background-color: white;
-    border: 2px black solid;
-    border-radius: 50px;
+
+.btn {
+  background-color: white;
+  border: 2px black solid;
+  border-radius: 50px;
+  font-weight: 600;
+  text-transform: uppercase;
+  padding: 15px;
+  margin: 10px;
+
+  &:hover {
+    background-color: #ECC4A2;
+    transition: background-color 0.3s;
+    color: black;
     font-weight: 600;
-    text-transform: uppercase;
-    padding: 15px;
-    margin: 10px;
-  
-    &:hover {
-      background-color: #ECC4A2;
-      transition: background-color 0.3s;
-      color: black;
-      font-weight: 600;
-      box-shadow: -2px 2px 2px 1px rgba(17, 17, 17, 0.2);
-  
-    
-    }
+    box-shadow: -2px 2px 2px 1px rgba(17, 17, 17, 0.2);
+
+
   }
-  
-  
-  
-  .snowflake {
-    font-size: 2.5rem;
-    margin: 5px;
+}
+
+.box {
+  margin: 20px auto;
+  width: 50%;
+
+  a {
+    text-decoration: none;
+    color: black;
     text-align: center;
   }
-  
-  .img-container img {
-    width: 100%;
-    height: auto;
-  }
- 
+}
 
 
-  
+
+
+.snowflake {
+  font-size: 2.5rem;
+  margin: 5px;
+  text-align: center;
+}
+
+.img-container img {
+  width: 100%;
+  height: auto;
+}

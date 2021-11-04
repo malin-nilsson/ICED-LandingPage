@@ -87,11 +87,6 @@
   font-weight: 900;
 }
 
-main {
-  background-color: #875c31;
-  color: white;
-}
-
 .grid-container {
   display: grid;
   grid-template-columns: 1fr;
@@ -102,11 +97,28 @@ main {
   flex-direction: column;
 }
 
+.community {
+  padding: 20px 0px 0px;
+}
+
 .title {
   text-align: center;
   font-size: 3rem;
-  padding: 10px;
-  margin: 10px;
+  margin: 0;
+  padding: 0;
+}
+
+.title-md {
+  font-size: 2rem;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+}
+
+.title-sm {
+  font-size: 2.8rem;
+  padding-top: 20px;
+  margin: 0;
 }
 
 .card {
@@ -150,6 +162,16 @@ main {
   color: black;
   font-weight: 600;
   box-shadow: -2px 2px 2px 1px rgba(17, 17, 17, 0.2);
+}
+
+.box {
+  margin: 20px auto;
+  width: 50%;
+}
+.box a {
+  text-decoration: none;
+  color: black;
+  text-align: center;
 }
 
 .snowflake {
@@ -259,30 +281,39 @@ footer .card a {
     display: none;
   }
 
+  main {
+    background-color: #fef8f2;
+    color: black;
+  }
+
   .grid-container {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
-    gap: 20px;
   }
 
-  figure img {
-    height: 400px;
-    width: auto;
-  }
-
-  .menu-card-container {
+  .grid-container .menu:nth-child(1) {
     display: flex;
-    width: 100%;
-    flex-direction: row;
-    justify-content: center;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 20px 10px 20px 20px;
   }
 
-  .menu-cards {
+  .grid-container .menu:last-child {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 20px 20px 20px 10px;
+  }
+
+  .grid-container .community {
+    display: flex;
+    flex-direction: column;
     justify-content: center;
-    padding-bottom: 50px;
+    padding: 20px 20px 20px 10px;
+  }
+
+  .img-container:hover {
+    opacity: 0.8;
   }
 
   .card.menu-locations {
@@ -307,22 +338,56 @@ footer .card a {
     font-size: 3rem;
   }
 
+  .header {
+    padding: 40px;
+  }
+
+  .box {
+    width: 80%;
+  }
+
+  .btn {
+    padding: 20px;
+  }
+
   .title {
-    font-size: 2.5rem;
+    font-size: 4rem;
+    text-align: center;
+    padding: 0px 20px;
+  }
+
+  .title-md {
+    font-size: 3.3rem;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+  }
+
+  .title-sm {
+    font-size: 2.8rem;
+    padding: 30px 0px 10px 20px;
+    margin: 0;
   }
 
   .about-container {
-    padding: 30px 150px;
+    display: flex;
+  }
+
+  .about {
+    padding: 50px;
+  }
+
+  .about-text {
+    padding: 20px;
+    line-height: 27px;
+  }
+
+  footer {
+    padding: 80px;
   }
 
   footer p {
     font-size: 1.2rem;
-  }
-
-  .btn {
-    padding: 25px;
-    margin: 10px;
-    font-size: 1.1rem;
   }
 
   .menu-container {
@@ -331,6 +396,7 @@ footer .card a {
 }
 * {
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -339,5 +405,4 @@ body {
   height: 100%;
   padding: 0;
   margin: 0;
-  scroll-behavior: smooth;
 }
