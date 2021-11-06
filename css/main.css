@@ -38,7 +38,6 @@
   text-decoration: none;
   color: black;
   font-size: 1.1rem;
-  text-transform: uppercase;
 }
 
 .navbar-links li:hover {
@@ -310,6 +309,24 @@ footer .card a {
     flex-direction: column;
     justify-content: center;
     padding: 20px 20px 20px 10px;
+  }
+
+  .img-container {
+    position: relative;
+    display: flex;
+  }
+
+  .label {
+    position: absolute;
+    top: 45%;
+    background: rgba(46, 10, 4, 0.1);
+    height: 80px;
+    width: 100%;
+    text-align: center;
+    font-size: 3.5rem;
+    color: white;
+    font-weight: 600;
+    padding: 7px;
   }
 
   .img-container:hover {
