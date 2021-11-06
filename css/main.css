@@ -179,6 +179,23 @@
   text-align: center;
 }
 
+.img-container {
+  position: relative;
+}
+
+.label {
+  position: absolute;
+  top: 45%;
+  background: rgba(46, 10, 4, 0.1);
+  height: 80px;
+  width: 100%;
+  text-align: center;
+  font-size: 3rem;
+  color: white;
+  font-weight: 600;
+  padding: 7px;
+}
+
 .img-container img {
   width: 100%;
   height: auto;
@@ -313,7 +330,6 @@ footer .card a {
 
   .img-container {
     position: relative;
-    display: flex;
   }
 
   .label {
