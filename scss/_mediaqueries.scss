@@ -5,7 +5,7 @@
   .hero-container {
     background-image: url('../images/hero-desktop.jpg');
     background-position: top center;
-    padding-bottom: 700px;
+    padding-bottom: 800px;
     background-size: cover;
   }
 
@@ -63,7 +63,7 @@
 
   }
 
-  .grid-container .menu:nth-child(1) {
+  .menu-section {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -71,7 +71,7 @@
 
   }
 
-  .grid-container .menu:last-child {
+  .location-section {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -79,7 +79,7 @@
 
   }
 
-  .grid-container .community {
+  .community {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -177,13 +177,13 @@
 
   footer {
     padding: 80px;
-  }
-
-  footer p {
+    text-align: center;
     font-size: 1.2rem;
+
+    a {
+      color: white;
+    }
   }
-
-
 
   .menu-container {
     padding: 100px;

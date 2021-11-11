@@ -120,32 +120,6 @@
   margin: 0;
 }
 
-.card {
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  border: none;
-  background-color: transparent;
-}
-.card a {
-  text-decoration: none;
-  color: black;
-}
-
-.card.follow {
-  padding-bottom: 60px;
-}
-
-.cards {
-  padding: 20px 20px;
-  background-color: antiquewhite;
-}
-.cards a {
-  color: black;
-}
-
 .btn {
   background-color: white;
   border: 2px black solid;
@@ -183,6 +157,11 @@
   position: relative;
 }
 
+.img-container img {
+  width: 100%;
+  height: auto;
+}
+
 .label {
   position: absolute;
   top: 45%;
@@ -194,11 +173,6 @@
   color: white;
   font-weight: 600;
   padding: 7px;
-}
-
-.img-container img {
-  width: 100%;
-  height: auto;
 }
 
 /* ABOUT */
@@ -225,26 +199,17 @@
 /* FOOTER */
 footer {
   background-color: #29201b;
-  color: white;
   padding: 30px;
+  text-align: center;
+  font-size: 1.2rem;
+  color: white;
+}
+footer a {
+  color: white;
 }
 
 footer p {
   margin: 7px;
-}
-
-footer .card a {
-  color: white;
-  text-decoration: underline;
-}
-
-.footer.cards {
-  background-color: #29201b;
-}
-
-.bold-text {
-  margin-bottom: 30px;
-  font-size: 2rem;
 }
 
 /* MEDIA QUERIES */
@@ -252,7 +217,7 @@ footer .card a {
   .hero-container {
     background-image: url("../images/hero-desktop.jpg");
     background-position: top center;
-    padding-bottom: 700px;
+    padding-bottom: 800px;
     background-size: cover;
   }
 
@@ -307,21 +272,21 @@ footer .card a {
     grid-template-columns: 1fr 1fr;
   }
 
-  .grid-container .menu:nth-child(1) {
+  .menu-section {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     padding: 20px 10px 20px 20px;
   }
 
-  .grid-container .menu:last-child {
+  .location-section {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     padding: 20px 20px 20px 10px;
   }
 
-  .grid-container .community {
+  .community {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -417,10 +382,11 @@ footer .card a {
 
   footer {
     padding: 80px;
-  }
-
-  footer p {
+    text-align: center;
     font-size: 1.2rem;
+  }
+  footer a {
+    color: white;
   }
 
   .menu-container {

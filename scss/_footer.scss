@@ -2,26 +2,18 @@
 /* FOOTER */
 
 footer {
-    background-color: #29201b;
+  background-color: #29201b;
+  padding: 30px;
+  text-align: center;
+  font-size: 1.2rem;
+  color: white;
+
+  a {
     color: white;
-    padding: 30px;
   }
-  
+}
+
   footer p {
     margin: 7px;
-  }
-  
-  footer .card a {
-    color: white;
-    text-decoration: underline;
-  }
-  
-  .footer.cards {
-    background-color: #29201b;
-  }
-  
-  .bold-text {
-    margin-bottom: 30px;
-    font-size: 2rem;
   }
   
