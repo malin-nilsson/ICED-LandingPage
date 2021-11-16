@@ -4,14 +4,14 @@
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    color: black;
-    background-color: rgba(255, 255, 255, 0.5);
+    background-color: rgba(180, 155, 127, 0.8);
+    padding: 10px;
   }
   
   .brand-title {
     font-size: 1.5rem;
     font-weight: 900;
-    margin: .5rem;
+    margin: 5px;
     text-transform: uppercase;
     color: black;
   }
@@ -22,9 +22,6 @@
     width: 100%;
   }
 
-
-  
-  
   .navbar-links ul {
     display: flex;
     margin: 0;
@@ -44,10 +41,15 @@
     text-decoration: none;
     color: black;
     font-size: 1.1rem;
+
+    &:hover {
+      color: rgb(255, 239, 214);
+    }
   }
   
   .navbar-links li:hover {
     text-decoration: underline;
+    color: rgb(255, 239, 214);
   }
   
   .navbar-links.active {
