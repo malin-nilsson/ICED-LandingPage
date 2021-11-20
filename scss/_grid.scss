@@ -2,16 +2,17 @@
 
 .grid-container {
   display: grid;
-  grid-template-columns: 1fr
+  grid-template-columns: 1fr;
+  height: 100vh;
 }
 
-.box {
-  display: flex;
-  flex-direction: column;
-}
 
 .community {
   padding: 20px 0px 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 h1 {
@@ -62,9 +63,9 @@ button {
 }
 
 .fab {
-font-size: 2.5rem;
-color: black;
-margin: 50px 20px;
+  font-size: 2.5rem;
+  color: black;
+  margin: 50px 20px;
 }
 
 .snowflake {
@@ -74,23 +75,50 @@ margin: 50px 20px;
 }
 
 .img-container {
-  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+
+  img {
+    width: 100%;
+    height: auto;
+  }
 }
 
-.img-container img {
-  width: 100%;
-  height: auto;
+.img-container:hover {
+text-decoration: underline;
+
 }
 
 .label {
-  position: absolute;
-  top: 45%;
-  background: rgba(46, 10, 4, 0.1);
-  height: 80px;
-  width: 100%;
+  background-color: white;
+  color: black;
   text-align: center;
-  font-size: 3rem;
-  color: white;
+  font-size: 2rem;
   font-weight: 600;
-  padding: 7px;
+  padding: 7px 40px;
+}
+
+.menu-section {
+  background-image: url(../images/menu.jpg);
+  background-size: cover;
+  background-position: top center;
+  background-repeat: no-repeat;
+
+  &:hover {
+    opacity: 0.9;
+  }
+}
+
+.location-section {
+  background-image: url(../images/locations.jpg);
+  background-size: cover;
+  background-position: top center;
+  background-repeat: no-repeat;
+
+  &:hover {
+    opacity: 0.9;
+  }
 }

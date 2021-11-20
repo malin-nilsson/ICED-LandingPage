@@ -63,6 +63,8 @@
   .grid-container {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    padding: 10px 40px;
 
     a {
       text-decoration: none;
@@ -70,19 +72,11 @@
   }
 
   .menu-section {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    padding: 20px 10px 20px 20px;
-
+    margin-left: 10px;
   }
 
   .location-section {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    padding: 20px 20px 20px 10px;
-
+    margin-right: 10px;
   }
 
   .community {
@@ -96,22 +90,7 @@
     position: relative;
   }
 
-  .label {
-    position: absolute;
-    top: 45%;
-    background: rgba(46, 10, 4, 0.1);
-    height: 80px;
-    width: 100%;
-    text-align: center;
-    font-size: 3.5rem;
-    color: white;
-    font-weight: 600;
-    padding: 7px;
-  }
 
-  .img-container:hover {
-    opacity: 0.8;
-  }
 
   .brand-title {
     font-size: 2.5rem;
@@ -171,8 +150,5 @@
     }
   }
 
-  .menu-container {
-    padding: 100px;
-  }
 
 }
