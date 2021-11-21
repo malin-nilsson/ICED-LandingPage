@@ -1,19 +1,30 @@
-
 /* FOOTER */
 
-footer {
+.footer-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   background-color: #29201b;
   padding: 30px;
   text-align: center;
   font-size: 1.2rem;
-  color: white;
+  color: rgb(252, 244, 233);
 
   a {
-    color: white;
+    color: rgb(252, 244, 233);
   }
 }
 
-  footer p {
+.footer-section {
+  margin: 10px 5px;
+
+  p {
     margin: 7px;
   }
-  
+}
+
+.footer-container .fab {
+  color: white;
+  margin: 0px 10px;
+  font-size: 1.5rem;
+}

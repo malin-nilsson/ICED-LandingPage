@@ -2,11 +2,14 @@
 
 @media only screen and (min-width: 768px) {
 
+
+  // HERO
   .hero-container {
     background-image: url('../images/hero-desktop.jpg');
     background-position: top center;
-    padding-bottom: 800px;
+    height: 100vh;
     background-size: cover;
+    padding-bottom: 750px;
   }
 
   .hero-text {
@@ -16,6 +19,7 @@
     font-size: 5rem;
   }
 
+  // NAVIGATION
   .navbar {
     position: fixed;
     z-index: 1;
@@ -41,7 +45,6 @@
     flex-direction: row;
   }
 
-
   .navbar-links ul li {
     font-size: 1.1rem;
   }
@@ -54,11 +57,16 @@
     display: none;
   }
 
-  main {
-    background-color: rgb(254, 248, 242);
-    color: black;
-
+  .brand-title {
+    font-size: 2.5rem;
   }
+
+  .header {
+    padding: 40px;
+  }
+
+
+  // GRID CONTAINER
 
   .grid-container {
     display: grid;
@@ -71,47 +79,22 @@
     }
   }
 
-  .menu-section {
-    margin-left: 10px;
-  }
-
-  .location-section {
-    margin-right: 10px;
-  }
-
+  // COMMUNITY
   .community {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding: 20px 20px 20px 10px;
+    padding: 0px 40px;
   }
 
-  .img-container {
-    position: relative;
+  // MENU + LOCATIONS
+  .menu-locations {
+    height: 100vh;
   }
 
-
-
-  .brand-title {
-    font-size: 2.5rem;
-  }
-
-  .header {
-    padding: 40px;
-  }
-
-
-  button {
-    padding: 25px 30px;
-    font-size: 1.1rem;
-    text-decoration: none;
-  }
-
+  // HEADINGS
   h1 {
     font-size: 4rem;
-    font-weight: 300;
+    font-weight: 700;
     text-align: center;
-    padding: 20px;
+    padding: 40px;
   }
 
   .title-md {
@@ -127,6 +110,7 @@
     margin: 0;
   }
 
+  // ABOUT
   .about-container {
     display: flex;
   }
@@ -140,15 +124,29 @@
     line-height: 27px;
   }
 
-  footer {
+  // FOOTER
+  .footer-container {
     padding: 80px;
     text-align: center;
     font-size: 1.2rem;
+    flex-direction: row;
+    justify-content: center;
 
     a {
       color: white;
     }
   }
 
+  .footer-section {
+    padding: 0px 60px;
+  }
 
-}
+  .footer-container .fab {
+    margin: 40px 10px;
+    font-size: 2rem;
+
+    &:hover {
+        color: #79665d;
+      }
+    }
+  }
