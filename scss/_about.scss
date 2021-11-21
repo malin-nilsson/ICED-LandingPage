@@ -1,20 +1,26 @@
 
   /* ABOUT */
   
-  .about {
+  .about-container {
+    display: flex;
+    flex-direction: column;
     background-color: rgb(233, 208, 167);
     color: black;
-    padding: 10px 30px;
+    padding: 10px;
   }
-  
+
+
   .about-text {
     font-size: 1.1rem;
-    line-height: 25px;
+    line-height: 30px;
+    padding: 10px;
   }
 
   .title-sm {
     text-align: left;
-    font-size: 2rem;
+    font-size: 1.8rem;
+    background-color: rgb(233, 208, 167);
+    padding: 30px 15px 10px;
   }
   
   .about a {

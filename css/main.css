@@ -1,16 +1,36 @@
 .navbar {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
   background-color: rgba(255, 239, 214, 0.9);
-  padding: 10px;
 }
 
-.brand-title {
+.navbar-nav {
+  align-items: center;
+}
+
+.navbar-brand {
   font-size: 1.5rem;
   font-weight: 900;
   margin: 5px;
   text-transform: uppercase;
+  color: black;
+}
+
+.navbar-collapse {
+  flex-grow: 0;
+}
+
+.nav-item {
+  font-size: 1.1rem;
+  font-weight: 700;
+  padding: 8px 10px;
+}
+.nav-item:hover {
+  text-decoration: underline;
+}
+
+.navbar-light .navbar-nav .nav-link {
+  color: black;
+}
+.navbar-light .navbar-nav .nav-link:hover {
   color: black;
 }
 
@@ -20,51 +40,9 @@
   width: 100%;
 }
 
-.navbar-links ul {
-  display: flex;
-  margin: 0;
-  padding: 0;
-  flex-direction: column;
-}
-
-.navbar-links li {
-  list-style: none;
-  text-align: center;
-  padding: 8px;
-  font-weight: 600;
-}
-
-.navbar-links ul li a {
-  text-decoration: none;
+.navbar-light .navbar-toggler {
   color: black;
-  font-size: 1.1rem;
-}
-
-.navbar-links li:hover {
-  text-decoration: underline;
-  color: black;
-}
-
-.navbar-links.active {
-  display: flex;
-}
-
-.toggle-button {
-  position: absolute;
-  top: 0.75rem;
-  right: 1rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  width: 30px;
-  height: 21px;
-}
-
-.toggle-button .bar {
-  height: 4px;
-  width: 100%;
-  background-color: black;
-  border-radius: 10px;
+  border: none;
 }
 
 .hero-container {
@@ -144,12 +122,12 @@ h1 {
   justify-content: center;
 }
 
-.social-btns {
+.social-buttons {
   display: flex;
   justify-content: center;
   flex-direction: row;
 }
-.social-btns a {
+.social-buttons a {
   display: inherit;
 }
 
@@ -195,20 +173,25 @@ h1 {
 }
 
 /* ABOUT */
-.about {
+.about-container {
+  display: flex;
+  flex-direction: column;
   background-color: #e9d0a7;
   color: black;
-  padding: 10px 30px;
+  padding: 10px;
 }
 
 .about-text {
   font-size: 1.1rem;
-  line-height: 25px;
+  line-height: 30px;
+  padding: 10px;
 }
 
 .title-sm {
   text-align: left;
-  font-size: 2rem;
+  font-size: 1.8rem;
+  background-color: #e9d0a7;
+  padding: 30px 15px 10px;
 }
 
 .about a {
@@ -219,15 +202,13 @@ h1 {
 .footer-container {
   display: flex;
   flex-direction: column;
-  align-items: center;
   background-color: #29201b;
   padding: 30px;
-  text-align: center;
   font-size: 1.2rem;
-  color: #fcf4e9;
+  color: white;
 }
 .footer-container a {
-  color: #fcf4e9;
+  color: white;
 }
 
 .footer-section {
@@ -235,12 +216,21 @@ h1 {
 }
 .footer-section p {
   margin: 7px;
+  text-align: left;
+}
+
+.footer-section .social-buttons {
+  justify-content: flex-start;
 }
 
 .footer-container .fab {
   color: white;
   margin: 0px 10px;
   font-size: 1.5rem;
+}
+
+#text {
+  display: none;
 }
 
 /* MEDIA QUERIES */
@@ -261,48 +251,12 @@ h1 {
   }
 
   .navbar {
-    position: fixed;
-    z-index: 1;
-    width: 100%;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0px 20px;
+    padding: 0;
   }
 
-  .toggle-button {
-    display: none;
-  }
-
-  .navbar-links {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-  }
-
-  .navbar-links ul {
-    display: flex;
-    flex-direction: row;
-  }
-
-  .navbar-links ul li {
-    font-size: 1.1rem;
-  }
-
-  .navbar-links li a {
-    padding: 11px;
-  }
-
-  .navbar-links.active {
-    display: none;
-  }
-
-  .brand-title {
-    font-size: 2.5rem;
-  }
-
-  .header {
-    padding: 40px;
+  .navbar-brand {
+    font-size: 2.2rem;
+    padding: 0;
   }
 
   .grid-container {
@@ -339,21 +293,25 @@ h1 {
 
   .title-sm {
     font-size: 2.8rem;
-    padding: 30px 0px 10px 20px;
+    padding: 60px 40px 0px;
     margin: 0;
   }
 
   .about-container {
     display: flex;
+    flex-direction: row;
+    flex-wrap: no-wrap;
+    padding: 45px 40px 80px;
   }
 
-  .about {
-    padding: 50px;
+  .about-section {
+    width: 50%;
   }
 
   .about-text {
-    padding: 20px;
-    line-height: 27px;
+    line-height: 30px;
+    padding: 0px 0px 20px 50px;
+    margin: 0;
   }
 
   .footer-container {
@@ -362,9 +320,16 @@ h1 {
     font-size: 1.2rem;
     flex-direction: row;
     justify-content: center;
+    align-items: center;
   }
   .footer-container a {
     color: white;
+  }
+
+  .footer-section p {
+    font-size: 1.2rem;
+    font-weight: 300;
+    margin: 9px 0px;
   }
 
   .footer-section {
