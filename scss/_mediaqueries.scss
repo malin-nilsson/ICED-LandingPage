@@ -85,7 +85,7 @@
   .about-section {
     width: 50%;
   }
-  
+
   .about-text {
     line-height: 30px;
     padding: 0px 0px 20px 50px;
@@ -124,5 +124,14 @@
     &:hover {
       color: #79665d;
     }
+  }
+
+  figure {
+    width: 40%;
+  }
+
+  .modal-content {
+    margin: 15% auto;
+    width: 90%;
   }
 }
