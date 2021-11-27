@@ -130,7 +130,6 @@ h1 {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-
 }
 
 figure {
@@ -173,26 +172,27 @@ figure {
   /* Modal Content/Box */
   .modal-content {
     display: flex;
-    background-color: #fefefe;
+    background-color:rgb(165, 128, 102);
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    color: white;
+    border: none;
     margin: 5% auto;
     /* 15% from the top and centered */
     padding: 20px;
-    border: 1px solid #888;
     width: 90%;
     /* Could be more or less, depending on screen size */
   }
 
   /* The Close Button */
   .close {
-    color: rgb(0, 0, 0);
+    color: white;
     text-align: left;
-    font-size: 3rem;
+    font-size: 2.5rem;
     font-weight: bold;
   }
 
   .close:hover,
   .close:focus {
-    color: black;
     text-decoration: none;
     cursor: pointer;
   }

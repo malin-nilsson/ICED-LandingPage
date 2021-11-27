@@ -53,6 +53,12 @@
     height: 100vh;
   }
 
+  .menu-gallery {
+    justify-content: center;
+    padding: 0px 20px;
+    align-items: flex-start;
+  }
+
   // HEADINGS
   h1 {
     font-size: 4rem;
@@ -128,10 +134,15 @@
 
   figure {
     width: 40%;
+    margin: 0px 30px 20px;
   }
 
   .modal-content {
-    margin: 15% auto;
-    width: 90%;
+    margin: 20px auto;
+    width: 70%;
+
+    .img-container:hover {
+        opacity: 0.9;
+      }
+    }
   }
-}
