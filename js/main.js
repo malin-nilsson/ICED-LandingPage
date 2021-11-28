@@ -1,31 +1,45 @@
 window.onload = function () {
-
-// Get the modal
-let modal = document.getElementById("menuModal");
-let modal2 = document.getElementById("locationModal")
-// Get the button that opens the modal
-let btn = document.getElementById("modalButton");
-
-// Get the <span> element that closes the modal
-let span = document.getElementsByClassName("close")[0];
-
-// When the user clicks on the button, open the modal
-btn.onclick = function() {
-  modal.style.display = "block";
+  menuModal() 
+  locationsModal()
 }
 
-// When the user clicks on <span> (x), close the modal
-span.onclick = function() {
-  modal.style.display = "none";
+function menuModal() {
+  let menuModal = document.getElementById("menu-modal");
+  let btnMenu = document.getElementById("btn-menu");
+  let span = document.querySelectorAll(".close")[0];
+
+  btnMenu.addEventListener("click", () => {
+    menuModal.style.display = "block";
+  }) 
+
+  span.addEventListener("click", () => {
+    menuModal.style.display = "none";
+  }) 
+
+  window.onclick = function(event) {
+    if (event.target == menuModal) {
+      menuModal.style.display = "none";
+    }
+  } 
 }
 
-// When the user clicks anywhere outside of the modal, close it
-window.onclick = function(event) {
-  if (event.target == modal) {
-    modal.style.display = "none";
-  }
-} 
+function locationsModal() {
+  let locationsModal = document.getElementById("locations-modal");
+  let btnLocations = document.getElementById("btn-locations");
+  let span = document.getElementsByClassName("close")[1];
 
+  btnLocations.addEventListener("click", () => {
+    locationsModal.style.display = "block";
+  }) 
 
+  span.addEventListener("click", () => {
+    locationsModal.style.display = "none";
+  }) 
+
+  window.onclick = function(event) {
+    if (event.target == locationsModal) {
+      locationsModal.style.display = "none";
+    }
+  } 
 }
 

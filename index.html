@@ -13,6 +13,10 @@
     <script src="https://kit.fontawesome.com/38e1bf458f.js" crossorigin="anonymous"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
+    </script>
+    <script src="js/main.js"> </script>
     <link rel="stylesheet" href="css/main.css" type="text/css" />
     <title>ICED &#10052;&#65039; &#9749;</title>
 </head>
@@ -34,16 +38,16 @@
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav">
                         <li class="nav-item">
-                            <a class="nav-link" aria-current="page" href="#">Menu</a>
+                            <a class="nav-link" href="#menulocations">Menu</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Locations</a>
+                            <a class="nav-link" href="#menulocations">Locations</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Community</a>
+                            <a class="nav-link" href="#community">Community</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Contact</a>
+                            <a class="nav-link" href="#contact">Contact</a>
                         </li>
 
                     </ul>
@@ -59,22 +63,20 @@
             <span class="snowflake"> &#10052;&#65039; </span>
         </h1>
 
-        <div class="grid-container menu-locations">
-            <button type="button" id="modalButton" class="menu-section">
+        <div class="grid-container menu-locations" id="menulocations">
+            <button type="button" id="btn-menu" class="menu-section">
                 <section>
-
                     <div class="label">Menu</div>
 
                 </section>
             </button>
             <!-- The Modal -->
-            <div id="menuModal" class="modal">
+            <div id="menu-modal" class="modal">
 
                 <!-- Modal content -->
                 <div class="modal-content">
                     <span class="close">&times;</span>
                     <div class="menu-gallery">
-                    
                         <figure>
                             <div class="img-container">
                                 <img src="images/menu-item-1.jpg">
@@ -107,13 +109,50 @@
                 </div>
 
             </div>
-            <button type="button" class="location-section">
+            <button type="button" id="btn-locations" class="location-section">
                 <section>
                     <div class="label">Locations</div>
                 </section>
-
             </button>
-            </section>
+
+            <!-- The Modal -->
+            <div id="locations-modal" class="modal">
+
+                <!-- Modal content -->
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <div class="locations-container">
+                        <figure>
+                            <div class="img-container">
+                                <img src="images/location-1.jpg">
+                            </div>
+                            <figcaption>Iced Cinnamon Americano</figcaption>
+                        </figure>
+
+                        <figure>
+                            <div class="img-container">
+                                <img src="images/location-2.jpg">
+                            </div>
+                            <figcaption>Iced Cinnamon Americano</figcaption>
+                        </figure>
+
+                        <figure>
+                            <div class="img-container">
+                                <img src="images/location-3.jpg">
+                            </div>
+                            <figcaption>Iced Cinnamon Americano</figcaption>
+                        </figure>
+
+                        <figure>
+                            <div class="img-container">
+                                <img src="images/location-4.jpg">
+                            </div>
+                            <figcaption>Iced Cinnamon Americano</figcaption>
+                        </figure>
+                    </div>
+                </div>
+            </div>
+
         </div>
 
         <div class="grid-container community">
@@ -146,6 +185,7 @@
                 <div class="img-container">
                     <img src="images/coffee.gif" alt="Coffee meme">
                 </div>
+            </section>
         </div>
 
         <div class="heading-container">
@@ -153,24 +193,28 @@
             </p>
         </div>
 
-        </div>
+
         <div class="about-container">
             <section class="about-section" id="about">
                 <div class="img-container">
                     <img src="images/cafe.jpg">
-
+                </div>
 
             </section>
 
             <section class="about-section">
                 <p class="about-text">
-                    The coffee biz really hasn’t been the same since a fateful afternoon in the Autumn of 59-. That’s
-                    when Iced opened its very first location. Javalovers everywhere quickly learned that Iced
+                    The coffee biz really hasn’t been the same since a fateful afternoon in the Autumn
+                    of 59-. That’s
+                    when Iced opened its very first location. Javalovers everywhere quickly learned that
+                    Iced
                     coffeehouse wasn’t just about a spectacularly refreshing cup of
                     coffee. It certainly was that, obviously. But it was something more as well.
                 </p>
-                <p class="about-text">It was a refuge for the wary coffee addict who needs a chill place to go with a
-                    friend to catch up, or sit alone sipping iced coffee with a big stack of books to keep them company.
+                <p class="about-text">It was a refuge for the wary coffee addict who needs a chill place
+                    to go with a
+                    friend to catch up, or sit alone sipping iced coffee with a big stack of books to
+                    keep them company.
                 </p>
                 <p class="about-text">
                     Iced isn’t just a coffee shop. It’s a lifestyle.
@@ -219,12 +263,6 @@
 
 
     </main>
-
-    <script src="js/main.js"> </script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
-    </script>
-
 </body>
 
 </html>

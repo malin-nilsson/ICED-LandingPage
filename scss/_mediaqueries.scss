@@ -57,6 +57,22 @@
     justify-content: center;
     padding: 0px 20px;
     align-items: flex-start;
+
+    figure {
+      width: 40%;
+      margin: 0px 30px 20px;
+    }
+  }
+
+  .locations-container {
+    justify-content: center;
+    padding: 0px 20px;
+    align-items: flex-start;
+
+    figure {
+      width: 80%;
+      margin: 0px 30px 20px;
+    }
   }
 
   // HEADINGS
@@ -132,10 +148,7 @@
     }
   }
 
-  figure {
-    width: 40%;
-    margin: 0px 30px 20px;
-  }
+  
 
   .modal-content {
     margin: 20px auto;
