@@ -46,7 +46,15 @@ h1 {
   font-size: 2.2rem;
   margin: 0;
   padding: 20px;
+  font-weight: 600;
   text-shadow: 3px 3px rgb(204, 181, 162);
+}
+
+h2 {
+  text-align: center;
+  padding: 10px 0px 30px;
+  font-weight: 900;
+  letter-spacing: 2px;
 }
 
 .title-md {
