@@ -1,8 +1,5 @@
 
 // NAV
-.navbar {
-  background-color: rgb(255, 239, 214, 0.9);
-}
 
 .navbar-nav {
   align-items: center;
@@ -13,7 +10,7 @@
     font-weight: 900;
     margin: 5px;
     text-transform: uppercase;
-    color: black;
+    color: #fff !important;
   }
 
   .navbar-collapse {
@@ -27,14 +24,15 @@
 
     &:hover {
       text-decoration: underline;
+      color: rgb(255, 239, 214);
     }
   }
 
   .navbar-light .navbar-nav .nav-link {
-    color: black;
+    color: #fff;
 
     &:hover {
-      color: black;
+      color: rgb(255, 239, 214);
     }
   }
 

@@ -2,7 +2,6 @@
 
 @media only screen and (min-width: 768px) {
 
-
   // HERO
   .hero-container {
     background-image: url('../images/hero-desktop.jpg');
@@ -149,6 +148,36 @@
   // MODAL
   .modal-content {
     margin: 20px auto;
-    width: 70%;
+    width: 60%;
+    -webkit-animation-name: animatemodal;
+    -webkit-animation-duration: 0.3s;
+    animation-name: animatemodal;
+    animation-duration: 0.3s;
+
+    /* Add Animation */
+    @-webkit-keyframes animatemodal {
+      from {
+        top: -300px;
+        opacity: 0;
+      }
+
+      to {
+        top: 0;
+        opacity: 1;
+      }
     }
+
+    @keyframes animatemodal {
+      from {
+        top: -300px;
+        opacity: 0;
+      }
+
+      to {
+        top: 0;
+        opacity: 1;
+      }
+    }
+
   }
+}
