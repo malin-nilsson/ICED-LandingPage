@@ -1,9 +1,10 @@
-@use 'navigation';
-@use 'hero';
-@use 'grid';
-@use 'about';
-@use 'footer';
-@use 'mediaqueries';
+@use 'elements/navigation';
+@use 'elements/hero';
+@use 'elements/grid';
+@use 'elements/about';
+@use 'elements/footer';
+@use 'elements/modal';
+@use '/src/scss/mixins';
 
 
 * {

@@ -11,6 +11,12 @@
     margin: 5px;
     text-transform: uppercase;
     color: #fff !important;
+
+    @include mixins.desktop-only {
+      font-size: 2.2rem;
+      padding: 0;
+  }
+
   }
 
   .navbar-collapse {

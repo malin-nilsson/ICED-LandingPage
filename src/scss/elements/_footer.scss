@@ -8,6 +8,14 @@
   font-size: 1.2rem;
   color: white;
 
+  @include mixins.desktop-only {
+    padding: 80px;
+    text-align: center;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+
   a {
     color: white;
   }
@@ -16,6 +24,10 @@
 .footer-section {
   margin: 10px 5px;
 
+  @include mixins.desktop-only {
+    padding: 0px 60px;
+  }
+
   p {
     margin: 7px;
     text-align: left;
@@ -23,7 +35,7 @@
 }
 
 .footer-section .social-buttons {
-justify-content: flex-start;
+  justify-content: flex-start;
 }
 
 
@@ -31,6 +43,15 @@ justify-content: flex-start;
   color: white;
   margin: 0px 10px;
   font-size: 1.5rem;
+
+  @include mixins.desktop-only {
+    margin: 40px 10px;
+    font-size: 2rem;
+  }
+
+  &:hover {
+    color: #79665d;
+  }
 }
 
 #text {

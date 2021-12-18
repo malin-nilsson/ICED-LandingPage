@@ -3,6 +3,17 @@
 .grid-container {
   display: grid;
   grid-template-columns: 1fr;
+
+  @include mixins.desktop-only {
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    padding: 10px 40px;
+  }
+
+  a {
+    text-decoration: none;
+  }
+
 }
 
 
@@ -10,7 +21,7 @@
 
 // Button for modal
 button {
-border: none;
+  border: none;
 }
 
 .menu-locations {
@@ -48,6 +59,12 @@ h1 {
   padding: 20px;
   font-weight: 600;
   text-shadow: 3px 3px rgb(204, 181, 162);
+
+  @include mixins.desktop-only {
+    font-size: 4rem;
+    padding: 40px;
+  }
+
 }
 
 h2 {
@@ -62,12 +79,21 @@ h2 {
   text-align: center;
   padding: 0px 10px;
   margin: 0;
+
+  @include mixins.desktop-only {
+    font-size: 3.3rem;
+    padding: 0;
+  }
 }
 
 .title-sm {
   font-size: 2.8rem;
   padding-top: 20px;
   margin: 0;
+
+  @include mixins.desktop-only {
+    padding: 60px 40px 0px;
+  }
 }
 
 // COMMUNITY
@@ -77,6 +103,7 @@ h2 {
   flex-direction: column;
   justify-content: center;
 }
+
 .social-buttons {
   display: flex;
   justify-content: center;
@@ -97,10 +124,10 @@ h2 {
   }
 }
 
-.snowflake {
-  font-size: 2.5rem;
-  margin: 5px;
-  text-align: center;
+.community {
+  @include mixins.desktop-only {
+    padding: 0px 40px;
+  }
 }
 
 .img-container {
@@ -138,20 +165,37 @@ h2 {
   flex-wrap: wrap;
   justify-content: center;
 
-  img {
-      box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  @include mixins.desktop-only {
+    padding: 0px 20px;
+    align-items: flex-start;
+  }
 
-      &:hover {
-        opacity: 0.8;
-      }
+  img {
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+
+    &:hover {
+      opacity: 0.8;
     }
   }
+}
 
 
 .locations-container {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+
+  figure {
+    @include mixins.desktop-only {
+      width: 80%;
+      margin: 0px 30px 20px;
+    }
+  }
+
+  @include mixins.desktop-only {
+    padding: 0px 20px;
+    align-items: flex-start;
+  }
 
   img {
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
@@ -170,64 +214,13 @@ figure {
   text-align: center;
   font-size: 1.5rem;
 
+  @include mixins.desktop-only {
+    width: 40%;
+    margin: 0px 30px 20px;
+  }
+
   figcaption {
     margin-top: 15px;
   }
 }
-
-
-  // Modal (background) 
-  .modal {
-    display: none;
-    position: fixed;
-    z-index: 1;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    overflow: auto; 
-    background-color: rgb(0, 0, 0);
-    background-color: rgba(0, 0, 0, 0.4);   
-  }
-
-  // Modal (Content/Box)
-  .modal-content {
-    display: flex;
-    background-color:rgb(165, 128, 102);
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-    color: white;
-    border: none;
-    margin: 5% auto;
-    padding: 20px;
-    width: 90%;
-  }
-
-  .locationsModal {
-    display: none;
-    position: fixed;
-    z-index: 1;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    overflow: auto;
-    background-color: rgb(0, 0, 0);
-    background-color: rgba(0, 0, 0, 0.4);   
-  }
-
-  /* Close Button */
-  .close-menu-modal,
-  .close-locations-modal
-   {
-    color: white;
-    text-align: left;
-    font-size: 2.5rem;
-    font-weight: bold;
-  }
-
-  .close-menu-modal,
-  .close-locations-modal {
-    text-decoration: none;
-    cursor: pointer;
-  }
 
