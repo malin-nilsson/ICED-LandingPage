@@ -1,3 +1,5 @@
+@use "../mixins";
+
 /* ABOUT */
 
 .about-container {
@@ -7,10 +9,14 @@
   color: black;
   padding: 10px;
 
+  @include mixins.tablet-only {
+    padding: 10px 20px 40px;
+  }
+
   @include mixins.desktop-only {
     flex-direction: row;
     flex-wrap: no-wrap;
-    padding: 45px 40px 80px;
+    padding: 45px 50px 80px;
   }
 }
 
@@ -25,9 +31,16 @@
   line-height: 30px;
   padding: 10px;
 
+  @include mixins.tablet-only {
+    padding: 20px 10px 0px;
+    font-size: 1.3rem;
+    line-height: 35px;
+  }
+
   @include mixins.desktop-only {
-    line-height: 30px;
-    padding: 0px 0px 20px 50px;
+    font-size: 1.3rem;
+    line-height: 32px;
+    padding: 0px 0px 20px 60px;
     margin: 0;
   }
 }
@@ -37,6 +50,18 @@
   font-size: 1.8rem;
   background-color: rgb(233, 208, 167);
   padding: 30px 15px 10px;
+
+  @include mixins.tablet-only {
+    font-size: 2.1rem;
+    padding: 30px 30px 10px;
+    margin: 0;
+  }
+
+  @include mixins.desktop-only {
+    font-size: 2.5rem;
+    padding: 60px 50px 0px;
+    margin: 0;
+  }
 }
 
 .about a {

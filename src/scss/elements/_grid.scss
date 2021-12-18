@@ -1,3 +1,5 @@
+@use "../mixins";
+
 // GRID
 
 .grid-container {
@@ -26,6 +28,11 @@ button {
 
 .menu-locations {
   height: 100vh;
+
+  @include mixins.tablet-only {
+    padding: 50px;
+
+  }
 }
 
 .menu-section {
@@ -36,6 +43,12 @@ button {
 
   &:hover {
     opacity: 0.9;
+  }
+
+  @include mixins.tablet-only {
+    padding-bottom: 55px;
+    margin-bottom: 30px;
+
   }
 }
 
@@ -62,7 +75,8 @@ h1 {
 
   @include mixins.desktop-only {
     font-size: 4rem;
-    padding: 40px;
+    font-weight: 700;
+    padding: 40p 80px;
   }
 
 }
@@ -80,21 +94,17 @@ h2 {
   padding: 0px 10px;
   margin: 0;
 
+  @include mixins.tablet-only {
+    font-size: 2.9rem;
+  }
+
   @include mixins.desktop-only {
     font-size: 3.3rem;
     padding: 0;
   }
 }
 
-.title-sm {
-  font-size: 2.8rem;
-  padding-top: 20px;
-  margin: 0;
 
-  @include mixins.desktop-only {
-    padding: 60px 40px 0px;
-  }
-}
 
 // COMMUNITY
 .grid-container .community-section {
@@ -223,4 +233,3 @@ figure {
     margin-top: 15px;
   }
 }
-

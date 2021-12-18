@@ -1,3 +1,5 @@
+@use "../mixins";
+
 /* FOOTER */
 
 .footer-container {
@@ -7,6 +9,12 @@
   padding: 30px;
   font-size: 1.2rem;
   color: white;
+
+  @include mixins.tablet-only {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
 
   @include mixins.desktop-only {
     padding: 80px;
@@ -24,6 +32,11 @@
 .footer-section {
   margin: 10px 5px;
 
+
+  @include mixins.tablet-only {
+    padding: 10px 35px 20px;
+  }
+
   @include mixins.desktop-only {
     padding: 0px 60px;
   }
@@ -31,6 +44,11 @@
   p {
     margin: 7px;
     text-align: left;
+
+
+  @include mixins.tablet-only {
+    margin: 4px;
+  }
   }
 }
 
