@@ -6,7 +6,6 @@
 @use 'elements/modal';
 @use '/src/scss/mixins';
 
-
 * {
   box-sizing: border-box;
   scroll-behavior: smooth;
@@ -20,5 +19,4 @@ body {
   margin: 0;
   background-color: rgb(255, 239, 214);
   color: black;
-
 }

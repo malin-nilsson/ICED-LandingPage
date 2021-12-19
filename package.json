@@ -17,9 +17,12 @@
     "url": "https://github.com/malin-nilsson/iced/issues"
   },
   "homepage": "https://github.com/malin-nilsson/iced#readme",
-  "dependencies": {},
+  "dependencies": {
+    "gulp": "^4.0.2",
+    "gulp-sass": "^5.0.0",
+    "sass": "^1.45.0"
+  },
   "devDependencies": {
-    "@parcel/transformer-sass": "^2.0.1",
-    "parcel": "^2.0.1"
+    "@parcel/transformer-sass": "^2.0.1"
   }
 }
