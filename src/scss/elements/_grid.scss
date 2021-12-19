@@ -6,6 +6,13 @@
   display: grid;
   grid-template-columns: 1fr;
 
+  @include mixins.tablet-only {
+    grid-template-columns: 1fr 1fr;
+    gap: 5px;
+    padding: 10px 20px;
+  }
+
+
   @include mixins.desktop-only {
     grid-template-columns: 1fr 1fr;
     gap: 20px;
@@ -30,7 +37,7 @@ button {
   height: 100vh;
 
   @include mixins.tablet-only {
-    padding: 50px;
+    height: 50vh;
 
   }
 }
@@ -45,11 +52,6 @@ button {
     opacity: 0.9;
   }
 
-  @include mixins.tablet-only {
-    padding-bottom: 55px;
-    margin-bottom: 30px;
-
-  }
 }
 
 .location-section {
@@ -168,6 +170,10 @@ h2 {
   font-size: 2rem;
   font-weight: 600;
   padding: 7px 20px;
+
+  @include mixins.tablet-only {
+    width: 100%;
+  }
 }
 
 .menu-gallery {

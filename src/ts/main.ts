@@ -4,9 +4,9 @@ window.onload = function () {
   }
   
   function menuModal() {
-    let menuModal = document.getElementById("menu-modal");
-    let menuButton = document.getElementById("btn-menu");
-    let closeMenuModal = document.querySelector(".close-menu-modal");
+    let menuModal: HTMLDivElement = document.getElementById("menu-modal") as HTMLDivElement;
+    let menuButton: HTMLButtonElement = document.getElementById("btn-menu") as HTMLButtonElement;
+    let closeMenuModal: HTMLSpanElement = document.querySelector(".close-menu-modal");
   
     menuButton.addEventListener("click", () => {
       menuModal.style.display = "block";
@@ -24,9 +24,9 @@ window.onload = function () {
   }
   
   function locationsModal() {
-    let locationsModal = document.getElementById("locations-modal");
-    let locationsButton = document.getElementById("btn-locations");
-    let closeLocationsModal = document.querySelector(".close-locations-modal");
+    let locationsModal: HTMLDivElement = document.getElementById("locations-modal") as HTMLDivElement;
+    let locationsButton: HTMLButtonElement = document.getElementById("btn-locations") as HTMLButtonElement;
+    let closeLocationsModal: HTMLSpanElement = document.querySelector(".close-locations-modal");
   
     locationsButton.addEventListener("click", () => {
       locationsModal.style.display = "block";
