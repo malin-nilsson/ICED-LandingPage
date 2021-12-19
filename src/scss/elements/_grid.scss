@@ -40,6 +40,11 @@ button {
     height: 50vh;
 
   }
+
+  @include mixins.desktop-only {
+    height: 100vh;
+
+  }
 }
 
 .menu-section {
@@ -173,6 +178,10 @@ h2 {
 
   @include mixins.tablet-only {
     width: 100%;
+  }
+
+  @include mixins.desktop-only {
+    width: 50%;
   }
 }
 
