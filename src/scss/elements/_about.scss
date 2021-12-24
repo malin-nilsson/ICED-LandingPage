@@ -5,7 +5,7 @@
 .about-container {
   display: flex;
   flex-direction: column;
-  background-color: rgb(233, 208, 167);
+  background-color: #e8d3b1;
   color: black;
   padding: 10px;
 
@@ -48,7 +48,7 @@
 .title-sm {
   text-align: left;
   font-size: 1.8rem;
-  background-color: rgb(233, 208, 167);
+  background-color: #e8d3b1;
   padding: 30px 15px 10px;
 
   @include mixins.tablet-only {
