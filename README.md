@@ -1,2 +1,4 @@
 # ICED
-Simple landing page built with HTML, SASS and TypeScript.
+Simple landing page for ICED - the cafe for iced coffee addicts.
+
+Built with HTML, SASS and TypeScript.
