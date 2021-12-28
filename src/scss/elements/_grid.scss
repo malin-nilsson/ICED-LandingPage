@@ -35,6 +35,8 @@ button {
 
 .menu-locations {
   height: 100vh;
+  padding: 0px 10px;
+  margin-top: -110px;
 
   @include mixins.tablet-only {
     height: 50vh;
@@ -43,6 +45,7 @@ button {
 
   @include mixins.desktop-only {
     height: 100vh;
+    margin-top: -60px;
 
   }
 }
@@ -52,6 +55,8 @@ button {
   background-size: cover;
   background-position: top center;
   background-repeat: no-repeat;
+  border-radius: 100px;
+  margin: 0px 0px 30px; 
 
   &:hover {
     opacity: 0.9;
@@ -64,6 +69,7 @@ button {
   background-size: cover;
   background-position: top center;
   background-repeat: no-repeat;
+  border-radius: 100px;
 
   &:hover {
     opacity: 0.9;
@@ -74,10 +80,10 @@ button {
 
 h1 {
   text-align: center;
-  font-size: 2.3rem;
+  font-size: 4rem;
   margin: 0;
-  padding: 150px 100px 400px;
-  font-weight: 300;
+  padding: 100px 30px 400px;
+  font-weight: 900;
   background-image: url("../images/wave-haikei.svg");
   background-position: bottom center;
   background-repeat: no-repeat;
@@ -99,9 +105,10 @@ h2 {
 }
 
 .title-md {
-  font-size: 2rem;
+  font-size: 3.3rem;
+  line-height: 4rem;
   text-align: center;
-  padding: 0px 10px;
+  padding: 20px 10px 0px;
   margin: 0;
 
   @include mixins.tablet-only {
@@ -162,6 +169,7 @@ h2 {
   img {
     width: 100%;
     height: auto;
+   
   }
 }
 
@@ -174,7 +182,7 @@ h2 {
   background-color: white;
   color: black;
   text-align: center;
-  width: 50%;
+  width: 60%;
   margin: 0 auto;
   font-size: 2rem;
   font-weight: 600;
