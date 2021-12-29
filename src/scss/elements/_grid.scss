@@ -8,7 +8,6 @@
 
   @include mixins.tablet-only {
     grid-template-columns: 1fr 1fr;
-    gap: 5px;
     padding: 10px 20px;
   }
 
@@ -36,17 +35,21 @@ button {
 .menu-locations {
   height: 100vh;
   padding: 0px 10px;
-  margin-top: -110px;
+  width: 100%;
+  margin: -110px auto auto;
+
 
   @include mixins.tablet-only {
+    padding: 50px 10px;
     height: 50vh;
+    margin-bottom: auto;
 
   }
 
   @include mixins.desktop-only {
     height: 100vh;
-    margin-top: -60px;
-
+    margin-bottom: auto;
+    width: 90%;
   }
 }
 
@@ -62,6 +65,16 @@ button {
     opacity: 0.9;
   }
 
+  @include mixins.tablet-only {
+    margin: 0px 20px;
+  }
+
+  @include mixins.desktop-only {
+    margin: 0px 20px;
+  }
+
+  
+
 }
 
 .location-section {
@@ -74,6 +87,16 @@ button {
   &:hover {
     opacity: 0.9;
   }
+
+  @include mixins.tablet-only {
+    margin: 0px 20px;
+  }
+
+
+  @include mixins.desktop-only {
+    margin: 0px 20px;
+  }
+
 }
 
 // HEADINGS
@@ -90,10 +113,12 @@ h1 {
   background-size: cover;
   color: #fff;
 
+  @include mixins.tablet-only {
+    font-size: 4.5rem;
+  }
 
   @include mixins.desktop-only {
     font-size: 5rem;
- 
   }
 
 }
@@ -122,7 +147,14 @@ h2 {
   }
 }
 
-
+#border {
+  background-image: url("../images/wave-haikei.svg");
+  background-position: bottom;
+  transform: rotate(360deg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 200px;
+}
 
 // COMMUNITY
 .grid-container .community-section {
@@ -154,7 +186,9 @@ h2 {
 
 .community {
   @include mixins.desktop-only {
-    padding: 0px 40px;
+    padding: 50px 40px;
+    width: 90%;
+    margin: 0 auto;
   }
 }
 
@@ -163,7 +197,7 @@ h2 {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
+  justify-content: flex-start;
   height: 100%;
 
   img {

@@ -2,14 +2,25 @@
 
 // NAV
 
+.navbar {
+  background-color: rgba(34, 23, 7, 0.8);
+
+  @include mixins.desktop-only {
+    background-color: transparent;
+  }
+}
+
+.navbar-dark .navbar-nav .nav-link {
+  color: #fff;
+}
 .navbar-nav {
   align-items: center;
+  color: #fff;
 }
 
 .navbar-brand {
   font-size: 1.5rem;
   font-weight: 900;
-  margin: 5px;
   text-transform: uppercase;
   color: #fff !important;
 
@@ -25,7 +36,7 @@
 }
 
 .nav-item {
-  font-size: 1.1rem;
+  font-size: 1.3rem;
   font-weight: 700;
   padding: 8px 10px;
 
@@ -36,7 +47,7 @@
 }
 
 .navbar-light .navbar-nav .nav-link {
-  color: #fff;
+  color: #fff !important;
 
   &:hover {
     color: #fff;
@@ -50,11 +61,13 @@
 }
 
 .navbar-light .navbar-toggler {
-  color: black;
+  color:#fff;
   border: none;
 }
 
 .navbar-toggler-icon {
+  padding: 10px;
+
   @include mixins.tablet-only {
     width: 2em;
     height: 2.5em;

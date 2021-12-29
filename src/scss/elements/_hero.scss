@@ -17,8 +17,9 @@
     @include mixins.desktop-only {
       background-image: url('../images/hero-desktop.jpg');
       height: 100vh;
-      background-size: cover;
-      padding-bottom: 830px;
+      background-size: fill;
+      background-position: center;
+ 
   }
   }
   

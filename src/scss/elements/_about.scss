@@ -16,7 +16,9 @@
   @include mixins.desktop-only {
     flex-direction: row;
     flex-wrap: no-wrap;
-    padding: 45px 50px 80px;
+    padding: 35px 50px 80px;
+    width: 90%;
+    margin: 0 auto;
   }
 }
 
@@ -26,6 +28,20 @@
   }
 }
 
+.heading-container {
+  width: 90%;
+  margin: 0 auto;
+
+  @include mixins.tablet-only {
+    width: 100%;
+  }
+
+  @include mixins.tablet-only {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+}
 .about-text {
   font-size: 1.4rem;
   line-height: 30px;
@@ -38,7 +54,7 @@
   }
 
   @include mixins.desktop-only {
-    font-size: 1.3rem;
+    font-size: 1.4rem;
     line-height: 32px;
     padding: 0px 0px 20px 60px;
     margin: 0;
@@ -47,20 +63,21 @@
 
 .title-sm {
   text-align: left;
-  font-size: 2.5rem;
+  font-size: 3rem;
   background-color: #e8d3b1;
-  padding: 30px 15px 10px;
+  padding: 30px 5px 10px;
 
   @include mixins.tablet-only {
-    font-size: 2.1rem;
-    padding: 30px 30px 10px;
+    font-size: 3rem;
+    padding: 30px 0px 10px;
     margin: 0;
   }
 
   @include mixins.desktop-only {
-    font-size: 2.5rem;
+    font-size: 3rem;
     padding: 60px 50px 0px;
     margin: 0;
+    font-weight: 700;
   }
 }
 

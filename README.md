@@ -17,7 +17,7 @@ Simple, fun landing page built with HTML, SASS, Bootstrap and TypeScript.
 
 ### Screenshot
 
-![](./screenshot.jpg)
+![](images/screenshot.jpg)
 
 ### Links
 
