@@ -1,5 +1,5 @@
 # ICED - the cafe for iced coffee addicts.
-Simple, fun landing page built with HTML, SASS, Bootstrap and TypeScript.
+Simple, fun business website with HTML, SASS, Bootstrap and TypeScript.
 
 ## Table of contents
 
@@ -34,7 +34,7 @@ Simple, fun landing page built with HTML, SASS, Bootstrap and TypeScript.
 - Mobile-first workflow
 
 ### What I learned
-
+During this project I got to develop some more layout and styling skills using Flexbox and SASS. I practiced creating modals from scratch and also learned more about using Bootstrap's navbar component.
 
 ### Continued development
 
@@ -45,3 +45,4 @@ Simple, fun landing page built with HTML, SASS, Bootstrap and TypeScript.
 - GitHub - [malin-nilsson](https://github.com/malin-nilsson)
 
 ## Acknowledgments
+Iced coffee 💙
