@@ -15,7 +15,7 @@ Simple, fun business website with HTML, SASS, Bootstrap and TypeScript.
 - CSS
 - SASS
 - Flexbox
-- JavaScript
+- TypeScript
 - Bootstrap
 - Mobile-first workflow
 
