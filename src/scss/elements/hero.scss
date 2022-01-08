@@ -37,13 +37,12 @@
     @include mixins.tablet-only {
       text-align: center;
       margin: 0 auto;
-      font-size: 5rem;
+      font-size: 4rem;
       padding: 100px 0px 0px;
   }
 
     @include mixins.desktop-only {
       text-align: right;
-      padding-right: 180px;
-      font-size: 5rem;
+      padding: 0px 150px;
   }
   }
