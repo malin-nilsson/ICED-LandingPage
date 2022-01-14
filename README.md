@@ -1,15 +1,15 @@
 # ICED - the cafe for iced coffee addicts.
 Simple, fun business website with HTML, SASS, Bootstrap and TypeScript.
 
-### Screenshot
+## Screenshot
 
 ![](src/images/screenshot.jpg)
 
-### Links
+## Links
 
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL: https://cafeiced.netlify.app
 
-### Built with
+## Built with
 
 - Semantic HTML5 markup
 - CSS
@@ -19,7 +19,7 @@ Simple, fun business website with HTML, SASS, Bootstrap and TypeScript.
 - Bootstrap
 - Mobile-first workflow
 
-### What I learned
+## What I learned
 During this project I got to develop some more layout and styling skills using Flexbox and SASS. I practiced creating modals from scratch and also got some Bootstrap training.
 
 If you're craving some iced coffee after looking around on the page, I will consider my mission accomplished 😊
