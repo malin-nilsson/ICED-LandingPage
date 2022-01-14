@@ -4,7 +4,7 @@
 @use 'elements/about';
 @use 'elements/footer';
 @use 'elements/modal';
-@use '/src/scss/mixins';
+@use 'mixins';
 
 * {
   box-sizing: border-box;
