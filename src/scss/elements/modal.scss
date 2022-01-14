@@ -25,6 +25,15 @@
     margin: 5% auto;
     padding: 20px;
     width: 90%;
+
+    @include mixins.tablet-only {
+      margin: 10px auto;
+      width: 70%;
+      -webkit-animation-name: animatemodal;
+      -webkit-animation-duration: 0.3s;
+      animation-name: animatemodal;
+      animation-duration: 0.3s;
+    }
   
     @include mixins.desktop-only {
       margin: 20px auto;
