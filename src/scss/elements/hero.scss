@@ -2,47 +2,45 @@
 
 // HERO
 .hero-container {
+  background-image: url('../images/hero.jpg');
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 600px;
+
+  @include mixins.tablet-only {
     background-image: url('../images/hero.jpg');
-    background-position: top center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 600px;
-
-    @include mixins.tablet-only {   
-      background-image: url('../images/hero.jpg');
-      height: 100vh;
-  
+    height: 100vh;
   }
 
-    @include mixins.desktop-only {
-      background-image: url('../images/hero-desktop.jpg');
-      height: 100vh;
-      background-size: fill;
-      background-position: center;
- 
+  @include mixins.desktop-only {
+    background-image: url('../images/hero-desktop.jpg');
+    height: 100vh;
+    background-size: fill;
+    background-position: center;
   }
-  }
-  
-  .hero-text {
-    position: absolute;
-    top: 250px;
-    left: 0;
-    right: 0;
+}
+
+.hero-text {
+  position: absolute;
+  top: 250px;
+  left: 0;
+  right: 0;
+  text-align: center;
+  color: rgb(255, 239, 214);
+  text-shadow: 6px 6px black;
+  font-size: 3.2rem;
+  font-weight: 900;
+
+  @include mixins.tablet-only {
     text-align: center;
-    color: rgb(255, 239, 214);
-    text-shadow: 6px 6px black;
-    font-size: 3.2rem;
-    font-weight: 900;
-
-    @include mixins.tablet-only {
-      text-align: center;
-      margin: 0 auto;
-      font-size: 4rem;
-      padding: 100px 0px 0px;
+    margin: 0 auto;
+    font-size: 4rem;
+    padding: 100px 0px 0px;
   }
 
-    @include mixins.desktop-only {
-      text-align: right;
-      padding: 0px 150px;
+  @include mixins.desktop-only {
+    text-align: right;
+    padding: 0px 150px;
   }
-  }
+}
