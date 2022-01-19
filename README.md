@@ -1,5 +1,5 @@
 # ICED - the cafe for iced coffee addicts.
-Simple, fun business website with HTML, SASS, Bootstrap and TypeScript.
+Landing page built with HTML, SASS, Bootstrap and TypeScript.
 
 ## Screenshot
 
