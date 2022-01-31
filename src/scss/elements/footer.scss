@@ -75,3 +75,22 @@
 #text {
   display: none;
 }
+
+.credit {
+  display: flex;
+  flex-direction: column;
+  background-color: #352922;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  font-size: 0.9rem;  
+  padding-bottom: 30px;
+
+  a {
+    color: #fff;
+  }
+
+  p {
+    margin: 0px;
+  }
+}
